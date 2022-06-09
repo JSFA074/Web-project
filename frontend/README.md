@@ -1,4 +1,4 @@
-# frontend
+# CookKing Project on VUE.js
 
 ## Project setup
 ```
@@ -22,3 +22,6 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+## Project Description
+Cook, share recipes, learn and improve your skills. All together with us. @ CookKing @
