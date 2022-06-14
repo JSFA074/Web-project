@@ -41,6 +41,3 @@ jobs:
     - name: Tests report
       run: |
         report
-    build_and_pub:
-  needs: [run_tests]
-ЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫ БЛЯТЬ 
