@@ -32,7 +32,7 @@
               <router-link class="btns__item" to="/login">Log In</router-link>
             </a>
             <a>
-              <router-link class="btns__item" to="/signin">Sign In</router-link>
+              <router-link class="btns__item" to="/signin">Sign Up</router-link>
             </a>
           </div>
 

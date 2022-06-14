@@ -26,13 +26,13 @@ export default {
   width: 50%;
   text-align: center;
   padding: 0 15px;
-  margin: 0 auto;
-
+  margin: 0px auto;
+  margin-top: 15%;
+  margin-bottom: 15%;
 }
 
 .page__text {
   font-size: 20px;
-  margin-bottom: 200px;
   line-height: 1.5;
 }
 

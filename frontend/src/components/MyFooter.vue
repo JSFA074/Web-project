@@ -89,7 +89,7 @@
                         </div>
 
                         <div class="message" data-title="Sourse">
-                            <a class="social__item" href="#" target="_blank">
+                            <a class="social__item" href="https://github.com/JSFA074/Web-project" target="_blank">
                                 <svg class="social__icon">
                                     <use xlink:href="#github"></use>
                                 </svg>

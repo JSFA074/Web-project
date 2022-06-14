@@ -24,7 +24,6 @@ export default {
 <style>
 body {
   margin: 0;
-  margin-top: 200px;
   font-family: 'Karla', sans-serif;
   font-size: 14px;
   color: #6c7279;
