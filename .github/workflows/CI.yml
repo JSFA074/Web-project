@@ -66,7 +66,7 @@ jobs:
           context: ./frontend
           dockerfile: ./frontend/Dockerfile  
           builder: ${{ steps.buildx.outputs.name }}
-          tags: ${{ env.REGISTRY }}/${{ github.repository }}/server:${{ github.sha }}
+          tags: ${{ env.REGISTRY }}/${{ github.repository }}/frontend:${{ github.sha }}
           push: true
           load: false
           cache-from: type=local,src=/tmp/.buildx-cache
@@ -78,7 +78,7 @@ jobs:
           context: ./backend
           dockerfile: ./backend/Dockerfile  
           builder: ${{ steps.buildx.outputs.name }}
-          tags: ${{ env.REGISTRY }}/${{ github.repository }}/server:${{ github.sha }}
+          tags: ${{ env.REGISTRY }}/${{ github.repository }}/backend:${{ github.sha }}
           push: true
           load: false
           cache-from: type=local,src=/tmp/.buildx-cache
