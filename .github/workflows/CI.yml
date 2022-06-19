@@ -71,8 +71,8 @@ jobs:
           dockerfile: ./frontend/Dockerfile  
           builder: ${{ steps.buildx.outputs.name }}
           tags: ${{ steps.meta.outputs.tags }}
-          push: true
-          load: false
+          push: false
+          load: true
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,dest=/tmp/.buildx-cache
       - name: Image digest
