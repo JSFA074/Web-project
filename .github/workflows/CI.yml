@@ -61,8 +61,7 @@ jobs:
           context: ./frontend
           dockerfile: ./frontend/Dockerfile  
           builder: ${{ steps.buildx.outputs.name }}
-          tags: ${{ steps.meta.outputs.tags }}
-          labels: ${{ steps.meta.outputs.labels }}
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/web_dev_final_project:latest
           push: true
           load: false
           cache-from: type=local,src=/tmp/.buildx-cache
@@ -74,8 +73,7 @@ jobs:
           context: ./backend
           dockerfile: ./backend/Dockerfile  
           builder: ${{ steps.buildx.outputs.name }}
-          tags: ${{ steps.meta.outputs.tags }}
-          labels: ${{ steps.meta.outputs.labels }}
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/web_dev_final_project:latest
           push: true
           load: false
           cache-from: type=local,src=/tmp/.buildx-cache
