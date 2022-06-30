@@ -1,6 +1,7 @@
 <template>
   <div>
     <MyHeader />
+    <MyArrow />
     <router-view />
     <MyFooter />
   </div>
@@ -10,12 +11,14 @@
 
 import MyHeader from "./components/MyHeader.vue"
 import MyFooter from "./components/MyFooter.vue"
+import MyArrow from "./components/MyArrow.vue"
 
 export default {
   name: "App",
   components: {
     MyHeader,
     MyFooter,
+    MyArrow,
   },
 }
 

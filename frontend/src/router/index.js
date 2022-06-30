@@ -33,9 +33,9 @@ const routes = [
     component: () => import('../views/RecipesView.vue')
   },
   {
-    path: '/top_recipes',
-    name: 'top_recipes',
-    component: () => import('../views/TopView.vue')
+    path: '/timer',
+    name: 'timer',
+    component: () => import('../views/TimerView.vue')
   },
 ]
 
