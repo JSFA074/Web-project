@@ -18,7 +18,7 @@
             <router-link class="nav__link" to="/recipes">Recipes</router-link>
           </a>
           <a>
-            <router-link class="nav__link" to="/top_recipes">Top</router-link>
+            <router-link class="nav__link" to="/timer">Timer</router-link>
           </a>
           <a>
             <router-link class="nav__link" to="/publish">Publish</router-link>
@@ -86,6 +86,7 @@ export default {
   margin-left: 2px;
   color: #5d5352;
   text-decoration: none;
+  opacity: 0.75;
 }
 
 .nav {
@@ -116,7 +117,7 @@ export default {
 .btns {
   font-size: 15px;
   font-weight: 700;
-  margin-left: 200px;
+  margin-left: 150px;
   display: flex;
 }
 
