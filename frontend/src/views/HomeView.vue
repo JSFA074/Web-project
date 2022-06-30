@@ -1,12 +1,15 @@
 <template>
-  <h1>Home</h1>
+  <MyCalendar />
 </template>
 
 <script>
 
+import MyCalendar from "@/components/MyCalendar.vue"
+
 export default {
   name: 'HomeView',
   components: {
+    MyCalendar,
   },
 }
 </script>

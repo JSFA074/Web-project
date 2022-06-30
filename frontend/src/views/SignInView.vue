@@ -93,4 +93,8 @@ export default {
   right: 50px;
   opacity: 0.5;
 }
+
+a {
+  cursor: pointer;
+}
 </style>
