@@ -31,13 +31,14 @@
           <div class="form-group">
             <input type="text" class="form-control" placeholder="Time" v-model="newNote.time">
           </div>
-          <button type="submit" class="btn btn-primary" @click="addNote()">Add note</button>
+          <button type="submit" @click="addNote">Add note</button>
         </div>
         <tbody class="note">
-          <tr v-for="note in notes" :key="note.id">
-            <td>{{ note.name }}</td>
-            <td>{{ note.time }}</td>
-          </tr>
+          <div class="note__item" v-for="note in notes" :key="note.id">
+            {{ note.id }}
+            {{ note.name }}
+            {{ note.time }}
+          </div>
         </tbody>
       </div>
     </div>
@@ -98,24 +99,25 @@ window.onload = function () {
 </script>
 
 <style scoped>
-
-
-
-
 h1 {
   font-family: 'Lobster', cursive;
 }
 
 .note {
-  border-bottom: 1px solid #6c7279;
-  border-radius: 12px;
   margin-top: 40px;
   width: 600px;
+  font-size: 20px;
+}
+
+.note__item {
+  border: 1px solid #6c7279;
+  border-radius: 12px;
 }
 
 td {
   margin-right: 15px;
 }
+
 .center {
   display: flex;
   justify-content: center;
@@ -127,7 +129,7 @@ td {
   border: 1px solid #6c7279;
   padding: 0 10px;
   margin-top: 100px;
-  margin-bottom: 20px;  
+  margin-bottom: 20px;
   width: 600px;
 }
 

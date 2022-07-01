@@ -19,7 +19,7 @@
             <h1>Say a few words about us!</h1>
             <div class="container">
               <form action="mailto:k1ngcook@yandex.ru" method="post" enctype="text/plain">
-                  <input type="text" name="FirstName" placeholder="First name">
+                  <input type="text" name="FirstName" placeholder="A few words">
                   <input type="text" name="Email" placeholder="Your email">
                   <input type="submit" name="submit" value="Submit">
               </form>
