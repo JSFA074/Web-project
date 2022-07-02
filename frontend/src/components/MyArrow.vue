@@ -46,7 +46,6 @@ export default {
     },
     methods: {
         topFunction() {
-            document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
         },
     }
@@ -55,11 +54,11 @@ export default {
 window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
-    if (document.documentElement.scrollTop > 20) {
-        document.getElementById("myBtn").style.display = "block";
-    } else {
+    (document.documentElement.scrollTop > 20)
+        ?
+        document.getElementById("myBtn").style.display = "block"
+        :
         document.getElementById("myBtn").style.display = "none";
-    }
 }
 </script>
 

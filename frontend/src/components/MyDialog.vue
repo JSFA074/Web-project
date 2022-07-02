@@ -3,7 +3,7 @@
     <div class="dialog" v-if="show" @click.stop="hideDialog">
         <div @click.stop class="dialog__content">
             <slot>
-            
+
             </slot>
         </div>
     </div>
@@ -29,13 +29,13 @@ export default {
 
 </script>
 
-<style> 
+<style scoped>
 .dialog {
     top: 0;
     bottom: 0;
     right: 0;
     left: 0;
-    background: (0, 0, 0, 0.5);
+    background: rgba(3, 3, 3, 0.5);
     position: fixed;
     display: flex;
     padding: 20px;
@@ -43,11 +43,13 @@ export default {
 
 .dialog__content {
     margin: auto;
+    margin-top: 100px;
     background: rgb(229, 228, 197);
+    background-image: url("@/assets/logo.png");
     border-radius: 12px;
-    min-width: 500px;
+    min-width: 300px;
     min-height: 400px;
-    padding: 10px;
+    padding: 30px;
+    overflow: auto;
 }
-
 </style>

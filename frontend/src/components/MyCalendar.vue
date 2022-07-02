@@ -285,7 +285,7 @@ body {
     align-content: center;
     position: relative;
     text-align: center;
-    opacity: 0.5;
+    opacity: 0.9;
     width: 16em;
     height: 16em;
 }
@@ -339,6 +339,7 @@ body {
     width: 100%;
     height: 100%;
     z-index: -1;
+    opacity: 0.5;
 }
 
 .progress-clock__ring {
@@ -349,12 +350,6 @@ body {
     transition:
         opacity 0s 0.3s linear,
         stroke-dashoffset 0.3s ease-in-out;
-}
-
-.progress-clock__ring-fill--360 {
-    opacity: 0;
-    stroke-dashoffset: 0;
-    transition-duration: 0.3s;
 }
 
 [data-group]:focus {
@@ -423,7 +418,7 @@ body {
     background: none;
     border: 1px solid #91907d;
     border-radius: 30px;
-    opacity: 0.75;
+    opacity: 0.9;
     margin-bottom: 50px;
 }
 
