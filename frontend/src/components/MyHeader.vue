@@ -26,16 +26,12 @@
           <a>
             <router-link class="nav__link" to="/about">About</router-link>
           </a>
-
           <div class="btns">
             <a>
-              <router-link class="btns__item" to="/login">Log In</router-link>
-            </a>
-            <a>
-              <router-link class="btns__item" to="/signin">Sign Up</router-link>
+              <router-link class="btns__item" to="/login">Authority</router-link>
             </a>
           </div>
-
+          
         </nav>
 
       </div>
