@@ -48,7 +48,7 @@
         <MyDialog class="dialog" v-model:show="dialogVisible">
           <h1>Say a few words about us!</h1>
           <h2>Your letter will be sent to our mail k1ngcook@yandex.ru</h2>
-          <div class="container">
+          <div class="container__feedback">
             <form action="mailto:k1ngcook@yandex.ru" method="post" enctype="text/plain">
               <input type="text" name="FirstName" placeholder="A few words">
               <input type="text" name="Email" placeholder="Your email">
@@ -90,7 +90,6 @@ export default {
 </script>
 
 <style scoped>
-
 .close {
   width: 40px;
   height: 40px;
@@ -112,12 +111,18 @@ export default {
 .container {
   width: 600px;
   flex-direction: column;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  background-color: #ffdbaf;
+}
+
+.container__feedback {
+  width: 600px;
+  flex-direction: column;
 }
 
 .page {
-  width: 100%;
-  height: 110vh;
-  background: linear-gradient(90deg, #f2cd99, #f0dba1, #f5e6b5, #f7d6a1, #d9ba91);
+  height: 100vh;
 }
 
 .page__text {
@@ -128,6 +133,8 @@ export default {
 .page__title {
   font-size: 32px;
   text-transform: uppercase;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
 }
 
 .btn {
@@ -138,7 +145,7 @@ export default {
   cursor: pointer;
   border: none;
   border-radius: 12px;
-  margin: 5px;
+  margin-bottom: 20px;
   background-color: #ff8174;
   opacity: 0.75;
   margin-top: 50px;
@@ -146,6 +153,7 @@ export default {
   text-align: center;
   text-transform: uppercase;
   font-weight: 700;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .btn:hover {
@@ -193,6 +201,7 @@ input[type="submit"] {
   margin-top: 40px;
   text-transform: uppercase;
   font-weight: 700;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 input[type="submit"]:hover {

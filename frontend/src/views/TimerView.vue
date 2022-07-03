@@ -175,8 +175,6 @@ window.onload = function () {
 </script>
 
 <style scoped>
-
-
 h1 {
   font-family: 'Lobster', cursive;
 }
@@ -278,7 +276,7 @@ td {
   width: 70%;
   height: 100vh;
   background-color: #ffcc99;
-  opacity: 0.9;
+  box-shadow: 0 -15px 20px rgba(0, 0, 0, 0.2);
 }
 
 .main__inner {
@@ -308,6 +306,7 @@ td {
   background-color: #ff8174;
   opacity: 0.75;
   margin-top: 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .btn:hover {

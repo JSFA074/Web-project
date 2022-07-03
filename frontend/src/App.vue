@@ -25,6 +25,8 @@ export default {
 </script>
 
 <style>
+
+
 html {
   scroll-behavior: smooth;
 }
@@ -34,7 +36,10 @@ body {
   font-family: 'Karla', sans-serif;
   font-size: 14px;
   color: #6c7279;
-  background-color: #f4e285;
+  background: url(@/assets/kitchen.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
 }
 
 *,
