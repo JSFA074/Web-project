@@ -13,14 +13,9 @@ const routes = [
     component: () => import('../views/AboutView.vue')
   },
   {
-    path: '/login',
-    name: 'login',
-    component: () => import('../views/LoginView.vue')
-  },
-  {
-    path: '/signin',
-    name: 'signin',
-    component: () => import('../views/SignInView.vue')
+    path: '/authority',
+    name: 'authority',
+    component: () => import('../views/AuthorityView.vue')
   },
   {
     path: '/publish',
