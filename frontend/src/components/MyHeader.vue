@@ -1,5 +1,5 @@
 <template>
-  <header class="header">
+  <header class="header" id="header">
     <div class="container">
       <div class="header__inner">
 
@@ -28,10 +28,10 @@
           </a>
           <div class="btns">
             <a>
-              <router-link class="btns__item" to="/login">Authority</router-link>
+              <router-link class="btns__item" to="/authority">Authority</router-link>
             </a>
           </div>
-          
+
         </nav>
 
       </div>
@@ -49,13 +49,12 @@ export default {
 .header {
   position: fixed;
   top: 0px;
-  z-index: 100;
+  z-index: 2000;
+  width: 100%;
+  border-radius: 30px;
 }
 
 .container {
-  width: 100%;
-  max-width: 1170px;
-  margin: 0 100px;
   background-color: #e99072;
   border-radius: 30px;
 }
@@ -73,6 +72,9 @@ export default {
 .header__logo {
   display: flex;
   align-items: center;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  padding: 0 10px;
 }
 
 .logo__name {
@@ -82,7 +84,7 @@ export default {
   margin-left: 2px;
   color: #5d5352;
   text-decoration: none;
-  opacity: 0.75;
+  opacity: 0.9;
 }
 
 .nav {
@@ -97,35 +99,36 @@ export default {
   color: #fff;
   text-decoration: none;
   opacity: .75;
-  border-bottom: 1px solid #f4e285;
+  border-left: 1px solid #fff;
   border-radius: 12px;
-  padding: 10px;
+  padding: 10px 20px;
   margin-left: 30px;
-
-  transition: color, font-size .1s linear;
+  transition: color .1s linear;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
+  background: none;
 }
 
 .nav__link:hover {
   opacity: 1;
-  color: #f4e285;
+  color: #fff;
 }
 
 .btns {
   font-size: 15px;
   font-weight: 700;
-  margin-left: 150px;
+  margin-left: 250px;
   display: flex;
 }
 
 .btns__item {
   text-decoration: none;
   margin-left: 10px;
-  border: 3px solid #bc4b51;
   border-radius: 12px;
-  padding: 5px;
+  padding: 10px 10px;
   color: #bc4b51;
   background-color: #fff;
-  opacity: 0.75
+  opacity: 0.75;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
 }
 
 .btns__item:hover {

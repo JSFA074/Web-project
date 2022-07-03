@@ -285,9 +285,10 @@ body {
     align-content: center;
     position: relative;
     text-align: center;
-    opacity: 0.9;
     width: 16em;
     height: 16em;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 100px;
 }
 
 .progress-clock__time-date,
@@ -339,7 +340,7 @@ body {
     width: 100%;
     height: 100%;
     z-index: -1;
-    opacity: 0.5;
+    opacity: 0.8;
 }
 
 .progress-clock__ring {
@@ -418,7 +419,6 @@ body {
     background: none;
     border: 1px solid #91907d;
     border-radius: 30px;
-    opacity: 0.9;
     margin-bottom: 50px;
 }
 

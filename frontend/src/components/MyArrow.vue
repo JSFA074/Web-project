@@ -54,11 +54,13 @@ export default {
 window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
-    (document.documentElement.scrollTop > 20)
-        ?
-        document.getElementById("myBtn").style.display = "block"
-        :
+    if (document.documentElement.scrollTop > 10) {
+        document.getElementById("myBtn").style.display = "block";
+        document.getElementById("header").style.boxShadow = "0 5px 5px rgba(0, 0, 0, 0.2)";
+    } else {
         document.getElementById("myBtn").style.display = "none";
+        document.getElementById("header").style.boxShadow = "none";
+    }
 }
 </script>
 

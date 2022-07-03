@@ -51,5 +51,6 @@ export default {
     min-height: 400px;
     padding: 30px;
     overflow: auto;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 </style>

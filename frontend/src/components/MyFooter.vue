@@ -142,6 +142,9 @@ export default {
 </script>
 
 <style scoped>
+
+
+
 .container {
     width: 100%;
     max-width: 1170px;
@@ -149,7 +152,8 @@ export default {
 }
 
 .footer {
-    background-color: #7effd4;
+    background-color: #f4e285;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .footer__inner {
