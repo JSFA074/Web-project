@@ -23,11 +23,6 @@ const routes = [
     component: () => import('../views/PublishView.vue')
   },
   {
-    path: '/recipes',
-    name: 'recipes',
-    component: () => import('../views/RecipesView.vue')
-  },
-  {
     path: '/timer',
     name: 'timer',
     component: () => import('../views/TimerView.vue')
