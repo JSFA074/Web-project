@@ -169,35 +169,35 @@ class ProgressClock {
             const units = [
                 {
                     label: "w",
-                    value: dayOfWeekName
+                    value: dayOfWeekName,
                 },
                 {
                     label: "mo",
                     value: monthInfo.name,
-                    progress: mo_progress
+                    progress: mo_progress,
                 },
                 {
                     label: "d",
                     value: day,
-                    progress: d_progress
+                    progress: d_progress,
                 },
                 {
                     label: "h",
                     value: hr > 12 ? hr - 12 : hr,
-                    progress: h_progress
+                    progress: h_progress,
                 },
                 {
                     label: "m",
                     value: min < 10 ? "0" + min : min,
-                    progress: m_progress
+                    progress: m_progress,
                 },
                 {
                     label: "s",
-                    value: sec < 10 ? "0" + sec : sec
+                    value: sec < 10 ? "0" + sec : sec,
                 },
                 {
                     label: "ap",
-                    value: hr > 12 ? "PM" : "AM"
+                    value: hr > 12 ? "PM" : "AM",
                 }
             ];
 
@@ -395,17 +395,6 @@ body {
 [data-group="s"]:focus~.progress-clock__rings [data-units="s"],
 [data-group="s"]:hover~.progress-clock__rings [data-units="s"] {
     opacity: 1;
-}
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        --bg: hsl(var(--hue), 10%, 10%);
-        --fg: hsl(var(--hue), 10%, 90%);
-    }
-
-    .progress-clock__ring {
-        opacity: 0.2;
-    }
 }
 
 .date {

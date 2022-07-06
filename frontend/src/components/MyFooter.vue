@@ -1,23 +1,9 @@
 <template>
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__inner">
+    <svg style="display: none;">
 
-                <div class="footer__block">
-                    <h4 class="footer__title">
-                        Location
-                    </h4>
-                    <address class="footer__address">
-                        <div>Russia Primorsky Krai</div>
-                        <div>Vladivostok FEFU 690091</div>
-                    </address>
-                </div>
-
-                <svg style="display: none;">
-
-                    <symbol id="github" viewBox="0 0 256.000000 256.000000">
-                        <g transform="translate(0.000000,256.000000) scale(0.100000,-0.100000)">
-                            <path d="M708 2513 c-39 -89 -48 -143 -48 -300 l0 -151 -40 -78 c-101 -197
+        <symbol id="github" viewBox="0 0 256.000000 256.000000">
+            <g transform="translate(0.000000,256.000000) scale(0.100000,-0.100000)">
+                <path d="M708 2513 c-39 -89 -48 -143 -48 -300 l0 -151 -40 -78 c-101 -197
                                 -92 -441 22 -631 44 -74 147 -184 222 -238 62 -44 219 -125 243 -125 19 0 16
                                 -7 -21 -53 -53 -66 -82 -138 -101 -251 l-6 -39 -76 5 c-94 6 -108 19 -168 153
                                 -55 121 -87 162 -155 198 -49 25 -61 27 -172 27 -138 0 -175 -12 -214 -69 -29
@@ -38,12 +24,12 @@
                                 -63 297 -24 29 20 41 47 57 136 18 100 44 144 148 244 l94 92 -103 27 c-351
                                 92 -579 337 -579 622 0 99 20 178 65 264 35 64 35 67 35 191 0 129 12 237 30
                                 285 10 26 13 27 63 23 28 -2 77 -16 107 -30z" />
-                        </g>
-                    </symbol>
+            </g>
+        </symbol>
 
-                    <symbol id="vk" viewBox="0 0 256.000000 256.000000">
-                        <g transform="translate(0.000000,256.000000) scale(0.100000,-0.100000)">
-                            <path d="M80 2058 c-51 -26 -80 -73 -80 -129 0 -84 74 -304 165 -494 201 -417
+        <symbol id="vk" viewBox="0 0 256.000000 256.000000">
+            <g transform="translate(0.000000,256.000000) scale(0.100000,-0.100000)">
+                <path d="M80 2058 c-51 -26 -80 -73 -80 -129 0 -84 74 -304 165 -494 201 -417
                                 495 -746 778 -875 123 -56 209 -74 347 -75 114 0 129 2 175 25 28 14 60 40 72
                                 59 21 32 23 45 23 187 0 85 4 154 8 154 31 0 156 -112 301 -267 75 -82 118
                                 -120 157 -139 52 -25 55 -26 243 -22 210 3 220 6 268 78 70 102 -31 281 -335
@@ -61,10 +47,24 @@
                                 c-152 160 -225 221 -307 259 -96 45 -190 28 -223 -41 -16 -32 -20 -68 -23
                                 -197 l-4 -157 -25 -6 c-44 -11 -195 4 -268 26 -254 79 -509 321 -715 681 -97
                                 169 -199 414 -225 537 l-7 32 145 0 c104 0 147 -4 154 -12z" />
-                        </g>
-                    </symbol>
+            </g>
+        </symbol>
 
-                </svg>
+    </svg>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+
+                <div class="footer__block">
+                    <h4 class="footer__title">
+                        Location
+                    </h4>
+                    <address class="footer__address">
+                        <div>Russia Primorsky Krai</div>
+                        <div>Vladivostok FEFU 690091</div>
+                    </address>
+                </div>
 
                 <div class="footer__block">
 
@@ -142,9 +142,6 @@ export default {
 </script>
 
 <style scoped>
-
-
-
 .container {
     width: 100%;
     max-width: 1170px;

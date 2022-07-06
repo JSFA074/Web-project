@@ -15,9 +15,6 @@
             <router-link class="nav__link" to="/">Home</router-link>
           </a>
           <a>
-            <router-link class="nav__link" to="/recipes">Recipes</router-link>
-          </a>
-          <a>
             <router-link class="nav__link" to="/timer">Timer</router-link>
           </a>
           <a>
@@ -31,7 +28,6 @@
               <router-link class="btns__item" to="/authority">Authority</router-link>
             </a>
           </div>
-
         </nav>
 
       </div>
@@ -72,7 +68,7 @@ export default {
 .header__logo {
   display: flex;
   align-items: center;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: -5px -5px 10px rgba(0, 0, 0, 0.2);
   border-radius: 15px;
   padding: 0 10px;
 }
@@ -85,6 +81,7 @@ export default {
   color: #5d5352;
   text-decoration: none;
   opacity: 0.9;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
 .nav {
@@ -104,7 +101,7 @@ export default {
   padding: 10px 20px;
   margin-left: 30px;
   transition: color .1s linear;
-  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: -5px -5px 3px rgba(0, 0, 0, 0.2);
   background: none;
 }
 
@@ -116,7 +113,7 @@ export default {
 .btns {
   font-size: 15px;
   font-weight: 700;
-  margin-left: 250px;
+  margin-left: 350px;
   display: flex;
 }
 
@@ -128,7 +125,7 @@ export default {
   color: #bc4b51;
   background-color: #fff;
   opacity: 0.75;
-  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+  box-shadow: -5px -5px 5px rgba(0, 0, 0, 0.3);
 }
 
 .btns__item:hover {

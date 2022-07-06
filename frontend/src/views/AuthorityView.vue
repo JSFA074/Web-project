@@ -15,9 +15,12 @@
 		c52.877,0.063,95.906,43.125,95.906,96S308.971,351.95,256.094,352.012z" />
       </g>
     </symbol>
+
   </svg>
+
   <center>
     <article class="container">
+
       <div class="block">
         <section class="block__item block-item">
           <h2 class="block-item__title">Have you prepared to eat with us?</h2>
@@ -71,6 +74,7 @@
           </p>
         </form>
       </div>
+      
     </article>
   </center>
 </template>
@@ -122,8 +126,6 @@ export default {
 </script>
 
 <style scoped>
-
-
 .container {
   width: 800px;
   height: 500px;

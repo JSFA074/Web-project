@@ -18,13 +18,13 @@ export default {
         show: {
             type: Boolean,
             default: false,
-        }
+        },
     },
     methods: {
         hideDialog() {
-            this.$emit('update:show', false)
-        }
-    }
+            this.$emit('update:show', false);
+        },
+    },
 }
 
 </script>

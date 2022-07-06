@@ -29,7 +29,9 @@
 			C191.915,268.259,171.615,294.259,147.315,315.859z" />
       </g>
     </symbol>
+
   </svg>
+
   <center>
     <div class="page center">
       <div class="container center">
@@ -96,6 +98,7 @@ export default {
   margin-top: 20px;
   transition: all .1s linear;
   opacity: 0.75;
+  cursor: pointer;
 }
 
 .close:hover {
@@ -128,6 +131,7 @@ export default {
 .page__text {
   font-size: 20px;
   line-height: 1.5;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .page__title {

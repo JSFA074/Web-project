@@ -1,6 +1,7 @@
 <template>
   <div>
     <MyHeader />
+    <MyPreloader />
     <MyArrow />
     <router-view />
     <MyFooter />
@@ -12,6 +13,7 @@
 import MyHeader from "./components/MyHeader.vue"
 import MyFooter from "./components/MyFooter.vue"
 import MyArrow from "./components/MyArrow.vue"
+import MyPreloader from "./components/MyPreloader.vue"
 
 export default {
   name: "App",
@@ -19,14 +21,13 @@ export default {
     MyHeader,
     MyFooter,
     MyArrow,
+    MyPreloader,
   },
 }
 
 </script>
 
 <style>
-
-
 html {
   scroll-behavior: smooth;
 }

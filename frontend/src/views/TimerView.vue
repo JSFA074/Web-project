@@ -29,7 +29,9 @@
 			C191.915,268.259,171.615,294.259,147.315,315.859z" />
       </g>
     </symbol>
+
   </svg>
+
   <center>
     <div class="main center">
       <div class="container center">
@@ -54,6 +56,7 @@
       </div>
     </div>
   </center>
+
   <MyDialog class="dialog" v-model:show="dialogVisible">
     <div class="dialog__content">
       <center>
@@ -84,6 +87,7 @@
       </svg>
     </center>
   </MyDialog>
+
   <MyDialog class="dialog_double" v-model:show="dialogVisible">
     <div class="dialog__double__content">
       <center>
@@ -148,7 +152,6 @@ window.onload = function () {
   var buttonReset = document.getElementById("reset")
 
   buttonStart.onclick = function () {
-    watch.classList.remove('paused');
     clearInterval(timer);
     timer = setInterval(() => {
       milliseconds += 10;
@@ -161,12 +164,10 @@ window.onload = function () {
   };
 
   buttonPause.onclick = function () {
-    watch.classList.add('paused');
     clearInterval(timer);
   };
 
   buttonReset.onclick = function () {
-    watch.classList.remove('paused');
     clearInterval(timer);
     milliseconds = 0;
     watch.innerHTML = '00:00:00';
@@ -185,6 +186,7 @@ h1 {
   margin-top: 20px;
   opacity: 0.75;
   transition: all .1s linear;
+  cursor: pointer;
 }
 
 .close:hover {
@@ -198,6 +200,7 @@ h1 {
   transition: all .1s linear;
   align-self: flex-end;
   margin-left: 5px;
+  cursor: pointer;
 }
 
 .delete:hover {
@@ -265,11 +268,11 @@ td {
 
 .name {
   border-radius: 30px;
-  border: 1px solid #6c7279;
   padding: 0 10px;
   margin-top: 100px;
   margin-bottom: 20px;
   width: 600px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .main {
@@ -277,11 +280,13 @@ td {
   height: 100vh;
   background-color: #ffcc99;
   box-shadow: 0 -15px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
 }
 
 .main__inner {
   margin-top: 10px;
   font-size: 20px;
+  text-shadow: -3px -3px 5px rgba(0, 0, 0, 0.2);
 }
 
 .container {
