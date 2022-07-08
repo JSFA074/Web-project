@@ -88,7 +88,6 @@ export default {
     },
   },
 }
-
 </script>
 
 <style scoped>
@@ -116,7 +115,7 @@ export default {
   flex-direction: column;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
   border-radius: 12px;
-  background-color: #ffdbaf;
+  background-color: rgba(255, 219, 175, 0.95);
 }
 
 .container__feedback {
